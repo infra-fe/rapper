@@ -1,0 +1,48 @@
+{
+  "name": "@rapper3/cli",
+  "version": "3.1.0",
+  "description": "> TODO: description",
+  "author": "ytftianwen@gmail.com <ytftianwen@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "es/index.js",
+  "bin": {
+    "rap": "./lib/index.js",
+    "rapper": "./lib/index.js"
+  },
+  "engines": {
+    "node": ">=14.16"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "es",
+    "src"
+  ],
+  "scripts": {
+    "test": "ts-node src/index.ts",
+    "test:commander": "ts-node src/index.ts --type react --rapperPath \"src/rapper\" --apiUrl \"./api/repository/get?id=350&token=pUEOckZ6CrzsEXgM7zDQNXDoLvFauf7f\" --rapUrl \".\" --enumType \"enum\"",
+    "build": "father build"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infra-fe/rapper3.git"
+  },
+  "dependencies": {
+    "@rapper3/cli-core": "^3.1.0",
+    "@rapper3/cli-generation": "^3.1.0",
+    "chalk": "^4",
+    "commander": "^9.4.0",
+    "query-string": "^7.1.1"
+  },
+  "gitHead": "21de44864ec144fc3940b39cf9d44598492bfad6"
+}

@@ -1,0 +1,23 @@
+
+
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "target": "esnext",
+    "allowJs": false,
+    "noUnusedLocals": false,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@rapper/*": ["packages/*/src"]
+    },
+    "lib": ["ESNext"]
+  }
+}

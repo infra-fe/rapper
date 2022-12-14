@@ -1,0 +1,50 @@
+{
+  "name": "@rapper3/react-query3",
+  "version": "0.2.0",
+  "jsnext:source": "./src/index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "es/index.js",
+  "jsnext:modern": "./dist/js/modern/index.js",
+  "scripts": {
+    "build": "father build"
+  },
+  "engines": {
+    "node": ">=14.17.6"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
+    ],
+    "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
+      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
+    ],
+    "*.js": "eslint --cache --fix"
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/"
+  ],
+  "peerDependencies": {
+    "@rapper3/request": "^0.0.7",
+    "react-query": "^3"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.23.0",
+    "@testing-library/react-hooks": "^8.0.0",
+    "@type-challenges/utils": "^0.1.1",
+    "changesets-gitlab": "^0.5.3",
+    "react-query": "^3"
+  },
+  "sideEffects": [
+    "*.css",
+    "*.less",
+    "*.sass",
+    "*.scss"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "gitHead": "21de44864ec144fc3940b39cf9d44598492bfad6"
+}

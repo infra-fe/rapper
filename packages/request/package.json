@@ -1,0 +1,49 @@
+{
+  "name": "@rapper3/request",
+  "version": "0.1.0",
+  "description": "default fetch for rapper",
+  "keywords": [
+    "rapper",
+    "request",
+    "axios"
+  ],
+  "author": "ytftianwen@gmail.com <ytftianwen@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "es/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "es",
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infra-fe/rapper3.git"
+  },
+  "scripts": {
+    "build": "father build"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "lodash.merge": "^4.6.2",
+    "lodash.omit": "^4.5.0",
+    "lodash.pickby": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/lodash.merge": "^4.6.7",
+    "@types/lodash.omit": "^4.5.7",
+    "@types/lodash.pickby": "^4.6.7",
+    "msw": "^0.44.2"
+  },
+  "gitHead": "21de44864ec144fc3940b39cf9d44598492bfad6"
+}

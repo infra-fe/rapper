@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["./src/**/*.ts"],
+  "exclude": ["**/node_modules/**", "./src/__tests__/*", "./esm/*", "./lib/*"],
+  "compilerOptions": {
+    "outDir": "lib",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "module": "CommonJS"
+  }
+}

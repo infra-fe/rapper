@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@rapper3/*": ["./packages/*/src"],
+      "@rapper/ahooks": ["./packages/react-ahooks/src"]
+    },
+    "outDir": "dist", //输出目录
+    "lib": ["esnext", "dom"],
+    "jsx": "react-jsx",
+    /** 自动生成声明文件.d.ts */
+    "declaration": true,
+    "types": ["node", "jest"],
+    "target": "esnext",
+    "strict": true,
+    "module": "esnext",
+    // "module": "CommonJS",
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "include": ["**/src/**/*", "src", "./*.d.ts", "docs"],
+  "ts-node": {
+    "esm": true
+  }
+}

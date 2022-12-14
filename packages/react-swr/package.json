@@ -1,0 +1,39 @@
+{
+  "name": "@rapper3/react-swr",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "ytftianwen@gmail.com <ytftianwen@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "es/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "es",
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infra-fe/rapper3.git"
+  },
+  "scripts": {
+    "build": "father build"
+  },
+  "devDependencies": {
+    "swr": "^1.3.0"
+  },
+  "peerDependencies": {
+    "@rapper3/request": "^0.1.0",
+    "swr": "^1.3.0"
+  },
+  "gitHead": "21de44864ec144fc3940b39cf9d44598492bfad6"
+}

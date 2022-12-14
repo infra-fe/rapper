@@ -1,0 +1,45 @@
+{
+  "name": "@rapper3/cli-generation",
+  "version": "3.1.0",
+  "description": "> TODO: description",
+  "author": "ytftianwen@gmail.com <ytftianwen@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "es/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "es",
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infra-fe/rapper3.git"
+  },
+  "scripts": {
+    "build": "father build"
+  },
+  "dependencies": {
+    "chalk": "^4",
+    "crypto": "^1.0.1",
+    "json-schema": "^0.4.0",
+    "json-schema-to-typescript": "^11.0.1",
+    "json5": "^2.2.1",
+    "lodash": "^4.17.21",
+    "mkdirp": "^1.0.4",
+    "ora": "^5"
+  },
+  "devDependencies": {
+    "@types/mkdirp": "^1.0.2"
+  },
+  "gitHead": "21de44864ec144fc3940b39cf9d44598492bfad6"
+}
